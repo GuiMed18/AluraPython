@@ -61,3 +61,14 @@ if not nome:
 #Operador Ternário
 mensagem = f'O restaurante {nome} foi ativado!' if not nome else f'O restaurante {nome} foi Desativado!'
 #A primeira mensagem vai ser exibida se a condição do if for verdadeira, se não, a outra é exibida
+
+# É possível incluir operadores matemáticos com strings, por exemplo
+
+cidade = 'Pindamonhangaba'
+linha = '*' * len(cidade)
+
+print(linha)
+print(cidade)
+print(linha)
+
+#Aqui, o elemento '*' foi multiplicado pela quantidade de letras que a cidade possui.
