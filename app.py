@@ -54,8 +54,12 @@ def cadastra_restaurante():
      
 def listar_restaurante():  
      
-    '''Essa função é responsável por listar os restaurantes cadastrados'''
+    '''Essa função é responsável por listar os restaurantes cadastrados
     
+      Outputs: Exibe restaurantes cadastrados na lista restaurantes
+
+       '''
+
     exibir_subtitulo('Lista de restaurantes')   
     print(f'{'Nome do restaurante'.ljust(23)} | {'Categoria'.ljust(20)} | {'Status'}')  
     for restaurante in restaurantes:
