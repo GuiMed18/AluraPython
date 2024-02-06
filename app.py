@@ -53,6 +53,9 @@ def cadastra_restaurante():
     voltar_ao_menu_principal()
      
 def listar_restaurante():  
+     
+    '''Essa função é responsável por listar os restaurantes cadastrados'''
+    
     exibir_subtitulo('Lista de restaurantes')   
     print(f'{'Nome do restaurante'.ljust(23)} | {'Categoria'.ljust(20)} | {'Status'}')  
     for restaurante in restaurantes:
