@@ -18,7 +18,7 @@ def exibe_nome():
 def listar_menu():
     print('1. Cadastrar Restaurante')
     print('2. Listar Restaurantes')
-    print('3. Ativar Restaurante')
+    print('3. Ativar/Desativar Restaurante')
     print('4. Sair\n')
 
 def voltar_ao_menu_principal():
@@ -54,13 +54,14 @@ def cadastra_restaurante():
      
 def listar_restaurante():  
     exibir_subtitulo('Lista de restaurantes')   
-
+    print(f'{'Nome do restaurante'.ljust(23)} | {'Categoria'.ljust(20)} | {'Status'}')  
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
         ativo = 'Ativo' if restaurante['ativo'] else 'Desativado'
-
-        print(f' - {nome_restaurante} | {categoria} | {ativo}')
+          
+       
+        print(f' - {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo}')
 
     voltar_ao_menu_principal()
 
