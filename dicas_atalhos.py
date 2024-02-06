@@ -72,3 +72,7 @@ print(cidade)
 print(linha)
 
 #Aqui, o elemento '*' foi multiplicado pela quantidade de letras que a cidade possui.
+
+#Função Ljust
+#Ljust determina a quantidade de caracteres contando com uma string
+print(f'{'Farofa'.ljust(20)} | ')
