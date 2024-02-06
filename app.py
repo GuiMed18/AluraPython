@@ -31,7 +31,12 @@ def opcao_invalida():
 
 def exibir_subtitulo(subtitulo):
      os.system('cls')
-     print(f'{subtitulo}\n')
+
+     linha = '*' * len(subtitulo)
+     
+     print(linha)     
+     print(subtitulo)
+     print(linha)    
 
 def cadastra_restaurante():
     exibir_subtitulo('Cadastro de restaurantes')    
@@ -42,7 +47,6 @@ def cadastra_restaurante():
     dados_do_restaurante = {'nome':nome_restaurante,'categoria':categoria,'ativo':False}
 
     restaurantes.append(dados_do_restaurante)
-   
 
     print(f'O restaurante {nome_restaurante} foi cadastrado com sucesso!')
 
@@ -54,7 +58,7 @@ def listar_restaurante():
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria = restaurante['categoria']
-        ativo = restaurante['ativo']
+        ativo = 'Ativo' if restaurante['ativo'] else 'Desativado'
 
         print(f' - {nome_restaurante} | {categoria} | {ativo}')
 
